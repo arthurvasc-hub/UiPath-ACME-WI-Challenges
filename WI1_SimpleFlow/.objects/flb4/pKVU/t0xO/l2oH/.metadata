@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Fechar",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "l2oHqstmkU62HBfUa3jZ5g",
+  "Reference": "Hstl8NvM9U-bM5BHB39cvQ/l2oHqstmkU62HBfUa3jZ5g",
+  "ParentRef": "Hstl8NvM9U-bM5BHB39cvQ/t0xOHrDYVkGZ4XPMMmV_SA",
+  "Created": "2026-03-03T22:46:46.5597465Z",
+  "Updated": "2026-03-03T22:46:46.5597465Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

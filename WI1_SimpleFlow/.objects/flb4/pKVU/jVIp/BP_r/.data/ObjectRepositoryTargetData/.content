@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rPMByVRxnUuQL4WiJeXJvw" Reference="Hstl8NvM9U-bM5BHB39cvQ/BP_rmgQbpEmHdCVOnABeGg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="4a625e7e-d2f3-4e9a-9dfc-64705c708cf2" CvElementArea="19, 259, 690, 189" CvType="Table" DesignTimeRectangle="22, 287, 675, 19" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='listView1' /&gt;&lt;ctrl name='693305' role='list' /&gt;&lt;ctrl name='69310905' role='list item' /&gt;" Guid="3782ec92-5bac-4c89-b73b-a497a7dbf0e6" ScopeSelectorArgument="&lt;wnd app='acme-system3.exe' ctrlname='ClientAccountMovemnets' /&gt;" SearchSteps="CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="7efa4060e15cef96b54df5a2bae9d975.jpg" xmlns="">0MklrUCP0o0C8ikK8LAw_Xg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ExtractDataGeneric</x:String>
+    <x:Null x:Key="NextLinkTarget" />
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

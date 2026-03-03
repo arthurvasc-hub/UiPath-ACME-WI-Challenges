@@ -1,0 +1,119 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 1,
+        "idRef": "NExtractDataGeneric`1_1",
+        "hash": "NExtractDataGeneric`1_1|DataTable|7zl3xVDxFTq93cwIz4NjQvbelaT7tLtdmIVtm1do9zg",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "Actions Url",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "WIID",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Description",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Type",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Status",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable1",
+        "hash": "NExtractDataGeneric`1_1|DataTable|oAHb3ztuRInE6xDrWpFYVpD3yvlwHbsuBLtxcwPFA",
+        "assemblyName": "Studio.Generated.TypedDataTable1"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 2,
+        "idRef": "NExtractDataGeneric`1_1",
+        "hash": "NExtractDataGeneric`1_1|DataTable|79IGoJuWjiUKL3nSP1cgcFag7DPBLRyZhi687dDA",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "transactionID",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "transaction Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Amount",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Type",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column1",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable2",
+        "hash": "NExtractDataGeneric`1_1|DataTable|65vGZTunalIgo67bTP7griHyWLs1giGhoOjwaE1lo",
+        "assemblyName": "Studio.Generated.TypedDataTable2"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 3,
+        "idRef": "NExtractDataGeneric`1_2",
+        "hash": "NExtractDataGeneric`1_2|DataTable|79IGoJuWjiUKL3nSP1cgcFag7DPBLRyZhi687dDA",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "transactionID",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "transaction Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Amount",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Type",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Column1",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable3",
+        "hash": "NExtractDataGeneric`1_2|DataTable|65vGZTunalIgo67bTP7griHyWLs1giGhoOjwaE1lo",
+        "assemblyName": "Studio.Generated.TypedDataTable3"
+      }
+    }
+  ]
+}

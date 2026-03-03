@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-tG3Afx0QUi1NpAesJLOMA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="0cd47d92-5031-44aa-813c-7d04469439bc" CvTextArea="102, 36, 38, 12" CvTextArgument="Clients" CvType="Text" DesignTimeRectangle="94, 32, 55, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='menuStrip1' /&gt;&lt;ctrl name='menuStrip1' role='menu bar' /&gt;&lt;ctrl name='Clients' role='menu item' /&gt;" Guid="b2d80793-3329-48ac-a61c-13e396597040" ScopeSelectorArgument="&lt;wnd app='acme-system3.exe' ctrlname='Dashboard' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0cd47d92-5031-44aa-813c-7d04469439bc" CvTextArea="57, 36, 28, 12" CvTextArgument="View" CvType="Text" DesignTimeRectangle="50, 32, 44, 22" FuzzySelectorArgument="&lt;wnd ctrlname='menuStrip1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;ctrl name='menuStrip1' role='menu bar' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='View' role='menu item' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='View' /&gt;" Guid="ed01c1ea-5a8d-4abc-adf9-e248c5dfceb5" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="722477cfcebdc0b141f17a605e4a9c37.png" xmlns="">0_mT-TrdTf0yKqmx5VncgTg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

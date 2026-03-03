@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4ZuDhwRXhESConzHvZVP4A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="198b70c0-be48-4148-a3a1-59e9861f550d" CvElementArea="293, 281, 133, 33" CvTextArea="342, 292, 32, 14" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="293, 281, 133, 33" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='button1' /&gt;" Guid="2ceace35-ef6b-48b9-8677-733a9ab19b90" ScopeSelectorArgument="&lt;wnd app='acme-system3.exe' ctrlname='Login' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="198b70c0-be48-4148-a3a1-59e9861f550d" CvElementArea="435, 281, 132, 33" CvTextArea="490, 292, 22, 12" CvTextArgument="Exit" CvType="Button" DesignTimeRectangle="435, 281, 133, 33" ElementType="Button" FuzzySelectorArgument="&lt;wnd ctrlname='groupBox1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='button2' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' check:text='Exit' /&gt;" Guid="0b3b5704-ce11-40fd-a9f8-26164032fbec" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3dddb3baa2ff680b539d046a9aede275.png" xmlns="">0K4-XkE1ohEK13xneavKENg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
