@@ -27,6 +27,14 @@
     {
       "Path": "ACME_System3/ACME_System3_SearchClient.xaml",
       "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ACME_System3/ACME_System3_ExtractAndSum.xaml",
+      "SortBy": 0,
       "VariablesSectionElementsOrder": null,
       "ArgumentsSectionElementsOrder": null,
       "ConstantsSectionElementsOrder": null,

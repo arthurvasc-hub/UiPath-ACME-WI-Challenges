@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ACME_System3_ExtractAndSum" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable3" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ACME_System3_ExtractAndSum" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=Studio.Generated.TypedDataTable3" xmlns:sd3="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="out_sumtotalSystem3" Type="OutArgument(x:Double)" />
   </x:Members>
@@ -109,79 +109,76 @@
       <AssemblyReference>System.Linq.Parallel</AssemblyReference>
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ACME_System3_ExtractAndSum" sap:VirtualizedContainerService.HintSize="1049,887.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ACME_System3_ExtractAndSum" sap:VirtualizedContainerService.HintSize="1043,1304" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Extrair a tabela e fazer a soma dos valores" sap:VirtualizedContainerService.HintSize="486,670" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Extrair a tabela e fazer a soma dos valores" sap:VirtualizedContainerService.HintSize="558,1281" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="ACME System 3(2)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,587" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="c77a343c-062c-4641-8aad-43313c211826" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ACME System 3(2)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,1198" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" IsIncognito="{x:Null}" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" OutUiElement="{x:Null}" ScopeGuid="c77a343c-062c-4641-8aad-43313c211826" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,445" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="522,1076" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="sum" />
-                <Variable x:TypeArguments="sd:DataTable3" Name="dtTransactions" />
+                <Variable x:TypeArguments="sd2:DataTable3" Name="dtTransactions" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NExtractDataGeneric x:TypeArguments="sd:DataTable3" ExtractDataSettings="{x:Null}" ContinueOnError="True" DisplayName="Extrair tabela" ExtractMetadata="&lt;extract-table table_source='CV' /&gt;" ExtractedData="[dtTransactions]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NExtractDataGeneric`1_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="c77a343c-062c-4641-8aad-43313c211826" Version="V5">
+              <uix:NExtractDataGeneric x:TypeArguments="sd2:DataTable3" ContinueOnError="True" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenPages="{x:Null}" DisplayName="Extrair tabela" ExtractDataSettings="{x:Null}" ExtractMetadata="&lt;extract-table table_source='CV' /&gt;" ExtractedData="[dtTransactions]" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,143" sap2010:WorkflowViewState.IdRef="NExtractDataGeneric`1_2" InUiElement="{x:Null}" InputDataTable="{x:Null}" InteractionMode="{x:Null}" LimitExtractionTo="None" MaximumResults="0" OutUiElement="{x:Null}" ScopeIdentifier="c77a343c-062c-4641-8aad-43313c211826" Timeout="{x:Null}" Version="V5">
                 <uix:NExtractDataGeneric.Target>
                   <uix:TargetAnchorable CVScreenId="7583767d-9196-41f2-b25d-2b6618e49f0b" ContentHash="xinYOBiQpk6gO5sKmXOFXA" CvElementArea="19, 260, 690, 188" CvType="Table" DesignTimeRectangle="22, 287, 675, 19" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='listView1' /&gt;&lt;ctrl name='693305' role='list' /&gt;&lt;ctrl name='69310905' role='list item' /&gt;" Guid="880f8db4-10ec-46ee-b7bc-c7eb72f0e7d1" InformativeScreenshot="946f0cbc742d8d6428bbd8f979275fad.jpg" Reference="Hstl8NvM9U-bM5BHB39cvQ/P4e9J7owR0entO4kiGVAAw" ScopeSelectorArgument="&lt;wnd app='acme-system3.exe' ctrlname='ClientAccountMovemnets' /&gt;" SearchSteps="CV" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NExtractDataGeneric.Target>
               </uix:NExtractDataGeneric>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtTransactions]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtTransactions]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="488,688" sap2010:WorkflowViewState.IdRef="ForEachRow_1" MaxIterations="{x:Null}" Values="{x:Null}">
                 <ui:ForEachRow.Body>
-                  <ActivityAction x:TypeArguments="sd1:DataRow">
+                  <ActivityAction x:TypeArguments="sd3:DataRow">
                     <ActivityAction.Argument>
-                      <DelegateInArgument x:TypeArguments="sd1:DataRow" Name="row" />
+                      <DelegateInArgument x:TypeArguments="sd3:DataRow" Name="row" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="548,480" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="486,506" sap2010:WorkflowViewState.IdRef="Sequence_4">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <If Condition="[Not String.IsNullOrWhiteSpace(row(&quot;Amount&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="514,420" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If Condition="[Not String.IsNullOrWhiteSpace(row(&quot;Column2&quot;).ToString) AndAlso IsNumeric(row(&quot;Column2&quot;).ToString)]" sap:VirtualizedContainerService.HintSize="452,446" sap2010:WorkflowViewState.IdRef="If_1">
                         <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,200" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_5">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478,140" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
-                              <ui:MultipleAssign.AssignOperations>
-                                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
-                                    <ui:AssignOperation.To>
-                                      <OutArgument x:TypeArguments="x:Double">[out_sumtotalSystem3]</OutArgument>
-                                    </ui:AssignOperation.To>
-                                    <ui:AssignOperation.Value>
-                                      <InArgument x:TypeArguments="x:Double">[out_sumtotalSystem3 + CDbl(row("Amount").ToString.Trim)]</InArgument>
-                                    </ui:AssignOperation.Value>
-                                  </ui:AssignOperation>
-                                </scg:List>
-                              </ui:MultipleAssign.AssignOperations>
-                            </ui:MultipleAssign>
+                            <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_1">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Double">[out_sumtotalSystem3]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Double">[out_sumtotalSystem3 + CDbl(row("Column2").ToString.Trim)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="512,90" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_6">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -196,12 +193,12 @@
                 </ui:ForEachRow.Body>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEachRow>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Fechar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c77a343c-062c-4641-8aad-43313c211826" Version="V5">
+              <uix:NClick ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'Fechar'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,185" sap2010:WorkflowViewState.IdRef="NClick_1" InUiElement="{x:Null}" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="c77a343c-062c-4641-8aad-43313c211826" Timeout="{x:Null}" UnblockInput="{x:Null}" Version="V5">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable ContentHash="G9cdaHpfHkS_JUgHifyyTQ" DesignTimeRectangle="707, 1, 34, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Fechar' role='push button' /&gt;" Guid="02307070-7c34-4cfb-9dc4-906106d9c401" InformativeScreenshot="8a781c461cb78cc0f6374e29c4670f13.jpg" Reference="Hstl8NvM9U-bM5BHB39cvQ/l2oHqstmkU62HBfUa3jZ5g" ScopeSelectorArgument="&lt;wnd app='acme-system3.exe' ctrlname='ClientAccountMovemnets' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
                 </uix:NClick.Target>
@@ -209,6 +206,13 @@
             </Sequence>
           </ActivityAction>
         </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
         <uix:NApplicationCard.TargetApp>
           <uix:TargetApp Area="676, 200, 748, 470" ContentHash="oS0DE-HAJk6ghvIMCwjaqA" IconBase64="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" InformativeScreenshot="aa4c74fecc46b152e0992461ab321259.jpg" Reference="Hstl8NvM9U-bM5BHB39cvQ/t0xOHrDYVkGZ4XPMMmV_SA" Selector="&lt;wnd app='acme-system3.exe' ctrlname='ClientAccountMovemnets' /&gt;" Version="V2">
             <uix:TargetApp.Arguments>
