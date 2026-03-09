@@ -1,0 +1,6 @@
+{
+  "Name": "WI2_SimpleFlow",
+  "ProjectType": "Process",
+  "Description": "Processo WI2 - ACME",
+  "MainFile": "Main.xaml"
+}

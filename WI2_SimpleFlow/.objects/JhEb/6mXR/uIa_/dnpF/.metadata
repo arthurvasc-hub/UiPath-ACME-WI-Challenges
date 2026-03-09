@@ -1,0 +1,14 @@
+﻿{
+  "Name": "2023",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "dnpFChLGQUWolNad6_CbWw",
+  "Reference": "yLD9KT3v50SKO-Rr8dsL-Q/dnpFChLGQUWolNad6_CbWw",
+  "ParentRef": "yLD9KT3v50SKO-Rr8dsL-Q/uIa_DN88_EuG5JSUGZ0vOQ",
+  "Created": "2026-03-09T21:34:03.3952124Z",
+  "Updated": "2026-03-09T21:34:03.3952124Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

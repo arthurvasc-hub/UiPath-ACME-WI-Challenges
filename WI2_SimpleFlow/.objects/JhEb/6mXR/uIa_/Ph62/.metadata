@@ -1,0 +1,14 @@
+﻿{
+  "Name": "January",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "Ph62IEr-N0yLkUAV3Cy6hg",
+  "Reference": "yLD9KT3v50SKO-Rr8dsL-Q/Ph62IEr-N0yLkUAV3Cy6hg",
+  "ParentRef": "yLD9KT3v50SKO-Rr8dsL-Q/uIa_DN88_EuG5JSUGZ0vOQ",
+  "Created": "2026-03-09T21:33:13.9377231Z",
+  "Updated": "2026-03-09T21:33:13.9377231Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.26.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
