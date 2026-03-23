@@ -1,0 +1,65 @@
+{
+  "name": "WI3_SimpleFlow",
+  "projectId": "18f2cee2-09e0-40a5-9cbe-b011f546e573",
+  "description": "Proecsso WI3 - ACME",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.CommunicationsMining.Activities": "[1.6.0]",
+    "UiPath.Credentials.Activities": "[3.0.0]",
+    "UiPath.DocumentUnderstanding.Activities": "[3.0.0-preview]",
+    "UiPath.GSuite.Activities": "[3.7.11]",
+    "UiPath.IntegrationService.Activities": "[1.24.0]",
+    "UiPath.Mail.Activities": "[2.7.11]",
+    "UiPath.PDF.Activities": "[3.25.0]",
+    "UiPath.System.Activities": "[26.2.1]",
+    "UiPath.UIAutomation.Activities": "[25.10.28]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "26.0.189.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "NewtonsoftJson",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "52e89ffa-c8cd-47ae-a939-9893f24eef30",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

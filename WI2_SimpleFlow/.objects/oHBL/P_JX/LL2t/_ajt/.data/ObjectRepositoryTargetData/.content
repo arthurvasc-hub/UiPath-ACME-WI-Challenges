@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="04fys29VsU-EsGsvAmY9gg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="7061b6e4-9007-4833-9b62-17450e5dc3c1" CvElementArea="615, 222, 108, 29" CvTextArea="646, 231, 42, 13" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="614, 222, 108, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='groupBox1' /&gt;&lt;wnd ctrlname='button1' aaname='Search' title='Search' /&gt;" Guid="dea8cba6-71ca-4ac3-ba3d-11316a632198" ScopeSelectorArgument="&lt;wnd app='acme-system3.exe' ctrlname='SearchCheckCopy' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="18adf0e3c63993259a44e05c96448d97.jpg" xmlns="">0G22usI8-Y06Km6tqI3QXcg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

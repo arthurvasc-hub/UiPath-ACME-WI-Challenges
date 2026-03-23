@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="p73N9lDRi02_XYOHTcAlBw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/testdata/invoices/291/Invoice-614286.pdf" DesignTimeRectangle="714, 240, 793, 1122" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Invoice-614286.pdf' role='document' /&gt;&lt;ctrl name='Documento PDF com 1 página' role='document' /&gt;&lt;ctrl name='Página 1' role='pane' /&gt;" Guid="7fb43c17-3147-4679-beb3-2992c3afe4ae" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Invoice-614286.pdf - Google Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="bd9cedd1ae856ecc89b4c5d8c77dd15b.jpg" xmlns="">0SoZvbs-V5k23U5rzpVOK_A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SetFocus</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="3oW0R8SbRkCCEjg1lA2rIA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/invoices/add" DesignTimeRectangle="461, 935, 145, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='buttonAddInvoice' tag='BUTTON' /&gt;" Guid="3e749a41-7218-4975-bcc4-21266426655b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Add Invoice Details' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a81f47bfe9243135da3ee5f816582b9d.jpg" xmlns="">0otb7R2B1oEWXlFoJRJWc-A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

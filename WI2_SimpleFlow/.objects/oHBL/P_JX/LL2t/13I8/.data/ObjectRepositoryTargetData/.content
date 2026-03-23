@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jDV1rx48eUm0jsn25QTMIA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="7061b6e4-9007-4833-9b62-17450e5dc3c1" CvTextArea="26, 301, 273, 13" CvTextArgument="- No search results" CvType="Text" DesignTimeRectangle="26, 301, 273, 13" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='listView1' /&gt;&lt;ctrl name='-' role='list item' /&gt;" Guid="5a7d0001-0f79-4384-bd3c-33e825d88cdb" ScopeSelectorArgument="&lt;wnd app='acme-system3.exe' ctrlname='SearchCheckCopy' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="7061b6e4-9007-4833-9b62-17450e5dc3c1" CvTextArea="26, 301, 273, 13" CvTextArgument="- No search results" CvType="Text" DesignTimeRectangle="22, 297, 675, 19" ElementType="ListItem" FuzzyAccuracy="0.85" FuzzySelectorArgument="&lt;wnd ctrlname='listView1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;ctrl role='list item' virtualname='- No search results  ' /&gt;" Guid="741c6d6e-ac27-45cd-a366-36386e3ee591" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="dd82a95c24ab558ab48ba7600afb507d.jpg" xmlns="">09c9C0xJj80K-LJEyVFpMuw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

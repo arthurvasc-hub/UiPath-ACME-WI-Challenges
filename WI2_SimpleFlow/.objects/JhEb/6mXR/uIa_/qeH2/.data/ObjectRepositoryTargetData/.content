@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NuAQmxZEzkGra85ZCX3ggQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/checks/search" CVScreenId="fdcda53e-d67d-4c25-80b6-ce6930aa70e1" CvTextArea="763, 145, 378, 17" CvTextArgument="No check was found based on the criteria that you have specified." CvType="Text" DesignTimeRectangle="764, 143, 408, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='acme-test.uipath.com diz' role='dialog' /&gt;&lt;ctrl name='No check was found based on the criteria that you have specified*' role='text' text='No check was found based on the criteria that you have specified.' /&gt;" Guid="a4d62861-d78a-4275-a309-8b0d4dc50ce3" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Search Client Check - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="fdcda53e-d67d-4c25-80b6-ce6930aa70e1" CvTextArea="761, 114, 188, 19" CvTextArgument="acme-test.uipath.com diz" CvType="Text" DesignTimeRectangle="761, 114, 188, 20" ElementType="Text" Guid="bc13fda5-439f-4ac3-9c6e-2e8f6714880d" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="76d23ff0eb86a3881640c8eab4511405.jpg" xmlns="">0CqdpEr5u60K8dvoRqNE-Rg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

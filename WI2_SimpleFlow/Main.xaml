@@ -119,13 +119,13 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1043,5145" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1043,6683" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Fluxo - ACME" sap:VirtualizedContainerService.HintSize="660,5122" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Fluxo - ACME" sap:VirtualizedContainerService.HintSize="660,6660" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="si:FileInfo" Name="clientCheckDownload" />
         <Variable x:TypeArguments="x:String" Name="strClientCheck" />
@@ -140,13 +140,13 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome ACME System 1 - Log In" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="626,5039" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome ACME System 1 - Log In" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="626,6577" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="624,4845" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="624,6383" sap2010:WorkflowViewState.IdRef="Sequence_1">
               <Sequence.Variables>
                 <Variable x:TypeArguments="ui:PasswordCredentials" Name="ACMECredentials" />
                 <Variable x:TypeArguments="sd2:DataTable1" Name="dtTabelaExtraida" />
@@ -252,44 +252,44 @@
                   <scg:Dictionary x:TypeArguments="x:String, Argument" />
                 </ui:InvokeWorkflowFile.Arguments>
               </ui:InvokeWorkflowFile>
-              <Sequence DisplayName="Download PDF e leitura" sap:VirtualizedContainerService.HintSize="590,1955" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <Sequence DisplayName="Download PDF e leitura" sap:VirtualizedContainerService.HintSize="590,4747" sap2010:WorkflowViewState.IdRef="Sequence_10">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtTabelaExtraida]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="556,1863" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtTabelaExtraida]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="556,4664" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                   <ui:ForEachRow.Body>
                     <ActivityAction x:TypeArguments="sd3:DataRow">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="sd3:DataRow" Name="CurrentRow" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="554,1690" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="554,4491" sap2010:WorkflowViewState.IdRef="Sequence_4">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <If Condition="[CurrentRow(&quot;Type&quot;).ToString.Equals(&quot;WI2&quot;)]" sap:VirtualizedContainerService.HintSize="520,1076" sap2010:WorkflowViewState.IdRef="If_1">
+                        <If Condition="[CurrentRow(&quot;Type&quot;).ToString.Equals(&quot;WI2&quot;)]" sap:VirtualizedContainerService.HintSize="520,1457" sap2010:WorkflowViewState.IdRef="If_1">
                           <If.Then>
-                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="518,711" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="518,1092" sap2010:WorkflowViewState.IdRef="Sequence_5">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <uix:NGoToUrl DisplayName="Go To URL - " sap:VirtualizedContainerService.HintSize="484,123" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" ScopeIdentifier="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Url="[&quot;https://acme-test.uipath.com/work-items/&quot; + CurrentRow(&quot;WIID&quot;).ToString]" Version="V5" />
-                              <ui:GetLastDownloadedFile FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[clientCheckDownload]" sap:VirtualizedContainerService.HintSize="484,528" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+                              <ui:GetLastDownloadedFile FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[clientCheckDownload]" sap:VirtualizedContainerService.HintSize="484,909" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
                                 <ui:GetLastDownloadedFile.Body>
                                   <ActivityAction>
-                                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,626" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Download Check Request'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Version="V5">
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Download Check Request'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Version="V5">
                                         <uix:NClick.Target>
                                           <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/107569459" CVScreenId="c59d53b4-d149-4d6b-803a-a0258175aae4" ContentHash="sjeIBosS-0uR86CLkm-G8Q" CvElementArea="497, 531, 210, 37" CvTextArea="531, 542, 162, 17" CvTextArgument="Download Check Request" CvType="Button" DesignTimeRectangle="499, 533, 206, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname=' Download Check Request' tag='BUTTON' /&gt;" Guid="1203d7cb-11ea-490d-b699-e7695ea1e490" InformativeScreenshot="4eb4e0756f306d7ab31d1569bb09c631.jpg" Reference="yLD9KT3v50SKO-Rr8dsL-Q/uATcfcJ-y0KMo4dycXmlyQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                             <uix:TargetAnchorable.Anchors>
@@ -300,6 +300,29 @@
                                           </uix:TargetAnchorable>
                                         </uix:NClick.Target>
                                       </uix:NClick>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'grouping'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Version="V5">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/testdata/checks/291/Check-Request-For-68130529.pdf" CVScreenId="cabc244f-1fc8-4d72-b7d0-11083a34842b" ContentHash="rI5MJgV9S06OhL_MEoxn3A" CvElementArea="1814, 198, 20, 20" CvType="Icon" DesignTimeRectangle="1814, 199, 20, 20" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Check-Request-For-68130529.pdf' role='document' /&gt;&lt;ctrl name='Baixar' role='push button' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;" Guid="8ef4c29b-9c91-471b-8e18-b7dab34a9750" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACTSURBVEhL7dLhCYAgEIbhBnM4t3AKt3AKt3AC4xMO5NK7E4wI/PFQHOVL2uWcq2+6+GC3E1AtBVJKDZ9LTkD1fSDGWEMI7b4P4EpziRrAIqWUdqUAYOa9fzzPqQGgSM+yOJgC0Eesi4M5AIisLA7TAO07n3P0ZXxOxAD9KRI6cP6+Ghgd7EjOWdy2aWCXE1D9P3ADncI2k1srkBkAAAAASUVORK5CYII=" InformativeScreenshot="00a4fe265bc600316bbc2f6af386defd.jpg" Reference="yLD9KT3v50SKO-Rr8dsL-Q/YQo1zSQbQUKVMzpewZRScQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Check-Request-For-68130529.pdf - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="cabc244f-1fc8-4d72-b7d0-11083a34842b" CvElementArea="1848, 198, 23, 22" CvType="Icon" DesignTimeRectangle="1850, 199, 20, 20" FullSelectorArgument="&lt;ctrl name='Check-Request-For-68130529.pdf' role='document' /&gt;&lt;ctrl name='Imprimir' role='push button' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;" Guid="0e16dc14-378c-4aea-ab57-c84b84b0f084" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVEhL7ZLBCcUgEERTmF1YhV3YhVXYhVXYhRUY5oNhmRhXSQL/kMMDWbP7dOJmjKlvsnHhaT6BylBQSpmC+5YEKaUaQuiCvdsCDOJ6A3v/J3DOHVdfAT3o5XknQc75B+etgR5IeN5JoMXCYKj3vsYYu3HdFmC4tfbyfwwFnPMV+HZJ0N6+XPdoj0GueV5XIBnF1Q7BtxkKJLMCrktUwUxE3LckmIH7pgVP8AlUXhfsAnG0YMfwcbgAAAAASUVORK5CYII=" SearchSteps="Selector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'dialog  Salvar como'" sap:VirtualizedContainerService.HintSize="416,178" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                        <ui:SendHotkey.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0692e473-dfa0-4781-97b9-19b5c2086f60" InformativeScreenshot="7890fb7503b5e16fa7549f9a6330b5eb" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Salvar como' /&gt;&lt;ctrl name='Salvar como' role='dialog' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:SendHotkey.Target>
+                                      </ui:SendHotkey>
                                     </Sequence>
                                   </ActivityAction>
                                 </ui:GetLastDownloadedFile.Body>
@@ -319,7 +342,7 @@
                         </If>
                         <ui:ReadPDFText PreserveFormatting="{x:Null}" DisplayName="Read PDF Text" FileName="[clientCheckDownload.ToString]" sap:VirtualizedContainerService.HintSize="520,115" sap2010:WorkflowViewState.IdRef="ReadPDFText_1" Range="All" Text="[strClientCheck]" />
                         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="520,175" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[strClientCheck]" />
-                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="520,264" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="520,273" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                           <ui:MultipleAssign.AssignOperations>
                             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                               <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -365,119 +388,174 @@
                             </scg:List>
                           </ui:MultipleAssign.AssignOperations>
                         </ui:MultipleAssign>
+                        <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="520,113" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[clientCheckDownload.ToString]" />
+                        <Sequence DisplayName="Preencher forms" sap:VirtualizedContainerService.HintSize="520,2298" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="s:DateTime" Name="dateCheckDate" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NGoToUrl DisplayName="Go To URL - uipath.com" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" ScopeIdentifier="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Url="https://acme-test.uipath.com/checks/search" Version="V5" />
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Check Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Text="[strCheckNumber]" Version="V5">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/checks/search" CVScreenId="4f22f928-fae2-4bf8-8702-64866bbcf6ff" ContentHash="hzmeSv4XnEa8o10SmO9-Ww" CvElementArea="467, 450, 487, 37" CvType="InputBox" DesignTimeRectangle="468, 452, 485, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='checkNumber' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e3bc88ee-8023-49c0-bf51-f56a61056a70" InformativeScreenshot="2b62b5f83961fa2358dfba493404b94f.jpg" IsResponsive="True" Reference="yLD9KT3v50SKO-Rr8dsL-Q/KN0njTbNv0C6n8_2iKLK9Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Search Client Check' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="4f22f928-fae2-4bf8-8702-64866bbcf6ff" CvTextArea="466, 429, 102, 14" CvTextArgument="Check Number" CvType="Text" DesignTimeRectangle="468, 427, 99, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Check Number' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Check Number' /&gt;" Guid="6863fb5a-2725-433c-bac1-cd889b7b23a7" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                            <uix:NTypeInto.VerifyOptions>
+                              <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              </uix:VerifyExecutionTypeIntoOptions>
+                            </uix:NTypeInto.VerifyOptions>
+                          </uix:NTypeInto>
+                          <Assign sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="s:DateTime">[dateCheckDate]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="s:DateTime">[DateTime.Parse(strCheckDate)]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Day'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Text="[dateCheckDate.Day.ToString()]" Version="V5">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/checks/search" CVScreenId="4f22f928-fae2-4bf8-8702-64866bbcf6ff" ContentHash="CDDKBzHKl0mQ81PRVF7rUg" CvElementArea="466, 525, 487, 36" CvType="InputBox" DesignTimeRectangle="468, 526, 485, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='checkDay' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d61b349e-a8fe-4041-9963-c9f40a451bc6" InformativeScreenshot="0b10794bc9ea172eef11f748f5e81be3.jpg" IsResponsive="True" Reference="yLD9KT3v50SKO-Rr8dsL-Q/OmHXoWOTtk2KMDzE9HchNg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Search Client Check' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="4f22f928-fae2-4bf8-8702-64866bbcf6ff" CvTextArea="467, 504, 27, 17" CvTextArgument="Day" CvType="Text" DesignTimeRectangle="468, 501, 26, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Day' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Day' /&gt;" Guid="030b82f1-5f66-4651-9659-afa70326f08a" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                            <uix:NTypeInto.VerifyOptions>
+                              <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              </uix:VerifyExecutionTypeIntoOptions>
+                            </uix:NTypeInto.VerifyOptions>
+                          </uix:NTypeInto>
+                          <uix:NSelectItem DisplayName="Select Item 'January'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,195" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="dateCheckDate.ToString(&quot;MMMM&quot;, System.Globalization.CultureInfo.InvariantCulture)" ScopeIdentifier="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Version="V5">
+                            <uix:NSelectItem.Items>
+                              <scg:List x:TypeArguments="x:String" Capacity="13">
+                                <x:String>---</x:String>
+                                <x:String>January</x:String>
+                                <x:String>February</x:String>
+                                <x:String>March</x:String>
+                                <x:String>April</x:String>
+                                <x:String>May</x:String>
+                                <x:String>June</x:String>
+                                <x:String>July</x:String>
+                                <x:String>August</x:String>
+                                <x:String>September</x:String>
+                                <x:String>October</x:String>
+                                <x:String>November</x:String>
+                                <x:String>December</x:String>
+                              </scg:List>
+                            </uix:NSelectItem.Items>
+                            <uix:NSelectItem.Target>
+                              <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/checks/search" CVScreenId="47d473f3-b8dc-47cd-8529-5925ba4046ea" ContentHash="6toMvAy790OKlpdvRXFNKQ" CvElementArea="466, 599, 223, 36" CvType="InputBox" DesignTimeRectangle="468, 600, 220, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-role='button' tag='BUTTON' type='button' class='btn dropdown-toggle btn-default' aaname='January' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='January' /&gt;" Guid="56db4bc4-2ea9-4329-9e91-a6c8a1dc4bad" InformativeScreenshot="0df26a61b9d6ff23c37c9bd19f24ac4e.jpg" Reference="yLD9KT3v50SKO-Rr8dsL-Q/Ph62IEr-N0yLkUAV3Cy6hg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Search Client Check' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="47d473f3-b8dc-47cd-8529-5925ba4046ea" CvTextArea="466, 577, 49, 15" CvTextArgument="Month:" CvType="Text" DesignTimeRectangle="468, 575, 47, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Month:' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Month:' /&gt;" Guid="b59b5780-f781-4cf0-bdf0-969163403a9c" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NSelectItem.Target>
+                          </uix:NSelectItem>
+                          <uix:NSelectItem DisplayName="Select Item '2023'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,195" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="2023" ScopeIdentifier="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Version="V5">
+                            <uix:NSelectItem.Items>
+                              <scg:List x:TypeArguments="x:String" Capacity="5">
+                                <x:String>---</x:String>
+                                <x:String>2026</x:String>
+                                <x:String>2025</x:String>
+                                <x:String>2024</x:String>
+                                <x:String>2023</x:String>
+                              </scg:List>
+                            </uix:NSelectItem.Items>
+                            <uix:NSelectItem.Target>
+                              <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/checks/search" CVScreenId="47d473f3-b8dc-47cd-8529-5925ba4046ea" ContentHash="fL-CvJeLmE6kC4--l8I__w" CvElementArea="466, 668, 223, 36" CvType="InputBox" DesignTimeRectangle="468, 669, 220, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='2023' aria-role='button' tag='BUTTON' type='button' class='btn dropdown-toggle btn-default' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='2023' /&gt;" Guid="60b150f6-144c-4e36-a12c-4295b01b99e9" InformativeScreenshot="e5c030c63ebbcc1c4e7b9b2a43c11757.jpg" Reference="yLD9KT3v50SKO-Rr8dsL-Q/dnpFChLGQUWolNad6_CbWw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Search Client Check' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="47d473f3-b8dc-47cd-8529-5925ba4046ea" CvTextArea="466, 647, 37, 13" CvTextArgument="Year:" CvType="Text" DesignTimeRectangle="468, 644, 34, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Year:' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Year:' /&gt;" Guid="1a39cd97-d23a-4b9b-a504-53b896274a7f" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NSelectItem.Target>
+                          </uix:NSelectItem>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search Check'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,194" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Version="V5">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/checks/search" CVScreenId="eda1ea68-7d88-4575-b9ee-87cb13e41699" ContentHash="BP3timva9keRSlsZJnvWuw" CvElementArea="466, 716, 117, 37" CvTextArea="479, 727, 92, 15" CvTextArgument="Search Check" CvType="Button" DesignTimeRectangle="468, 718, 114, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='searchCheck' tag='BUTTON' /&gt;" Guid="1db8a79d-54da-4989-b069-97f6e61edd6b" InformativeScreenshot="19a428a3da3742691d259c9da6c7bac4.jpg" Reference="yLD9KT3v50SKO-Rr8dsL-Q/ppcpNqYSPUOz6343Mh1Kuw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Search Client Check' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NCheckState DisplayName="Check App State 'No check was found base…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,841" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Version="V5">
+                            <uix:NCheckState.IfExists>
+                              <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,415" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'chrome.exe ACME'" sap:VirtualizedContainerService.HintSize="416,187" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                  <ui:SendHotkey.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e0300949-ad0e-4f3f-b113-f0ccc97bb011" InformativeScreenshot="1b50b6298772f10d388fa986c7f1e3d8">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:SendHotkey.Target>
+                                </ui:SendHotkey>
+                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="ACME_System3_SearchClient - Invoke Workflow File (ACME_System3\ACME_System3_SearchClient.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ACME_System3\ACME_System3_SearchClient.xaml">
+                                  <ui:InvokeWorkflowFile.Arguments>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_strCurrentWIID">[CurrentRow("WIID").ToString]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_strCheckNumber">[strCheckNumber]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_strCheckDate">[strCheckDate]</InArgument>
+                                    <InArgument x:TypeArguments="x:String" x:Key="in_strClientId">[strClientID]</InArgument>
+                                  </ui:InvokeWorkflowFile.Arguments>
+                                </ui:InvokeWorkflowFile>
+                              </Sequence>
+                            </uix:NCheckState.IfExists>
+                            <uix:NCheckState.IfNotExists>
+                              <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </uix:NCheckState.IfNotExists>
+                            <uix:NCheckState.Target>
+                              <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/checks/search" CVScreenId="fdcda53e-d67d-4c25-80b6-ce6930aa70e1" ContentHash="NuAQmxZEzkGra85ZCX3ggQ" CvTextArea="763, 145, 378, 17" CvTextArgument="No check was found based on the criteria that you have specified." CvType="Text" DesignTimeRectangle="764, 143, 408, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='acme-test.uipath.com diz' role='dialog' /&gt;&lt;ctrl name='No check was found based on the criteria that you have specified*' role='text' text='No check was found based on the criteria that you have specified.' /&gt;" Guid="a4d62861-d78a-4275-a309-8b0d4dc50ce3" InformativeScreenshot="76d23ff0eb86a3881640c8eab4511405.jpg" Reference="yLD9KT3v50SKO-Rr8dsL-Q/qeH2EdOxMECfYOkU4SmP5Q" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Search Client Check - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <uix:Target CVScreenId="fdcda53e-d67d-4c25-80b6-ce6930aa70e1" CvTextArea="761, 114, 188, 19" CvTextArgument="acme-test.uipath.com diz" CvType="Text" DesignTimeRectangle="761, 114, 188, 20" ElementType="Text" Guid="bc13fda5-439f-4ac3-9c6e-2e8f6714880d" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NCheckState.Target>
+                          </uix:NCheckState>
+                        </Sequence>
                       </Sequence>
                     </ActivityAction>
                   </ui:ForEachRow.Body>
                 </ui:ForEachRow>
-              </Sequence>
-              <Sequence DisplayName="Preencher forms" sap:VirtualizedContainerService.HintSize="590,1254" sap2010:WorkflowViewState.IdRef="Sequence_11">
-                <Sequence.Variables>
-                  <Variable x:TypeArguments="s:DateTime" Name="dateCheckDate" />
-                </Sequence.Variables>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <uix:NGoToUrl DisplayName="Go To URL - uipath.com" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" ScopeIdentifier="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Url="https://acme-test.uipath.com/checks/search" Version="V5" />
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Check Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Text="[strCheckNumber]" Version="V5">
-                  <uix:NTypeInto.Target>
-                    <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/checks/search" CVScreenId="4f22f928-fae2-4bf8-8702-64866bbcf6ff" ContentHash="hzmeSv4XnEa8o10SmO9-Ww" CvElementArea="467, 450, 487, 37" CvType="InputBox" DesignTimeRectangle="468, 452, 485, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='checkNumber' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e3bc88ee-8023-49c0-bf51-f56a61056a70" InformativeScreenshot="2b62b5f83961fa2358dfba493404b94f.jpg" IsResponsive="True" Reference="yLD9KT3v50SKO-Rr8dsL-Q/KN0njTbNv0C6n8_2iKLK9Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Search Client Check' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
-                      <uix:TargetAnchorable.Anchors>
-                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                          <uix:Target CVScreenId="4f22f928-fae2-4bf8-8702-64866bbcf6ff" CvTextArea="466, 429, 102, 14" CvTextArgument="Check Number" CvType="Text" DesignTimeRectangle="468, 427, 99, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Check Number' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Check Number' /&gt;" Guid="6863fb5a-2725-433c-bac1-cd889b7b23a7" SearchSteps="FuzzySelector, CV" />
-                        </scg:List>
-                      </uix:TargetAnchorable.Anchors>
-                    </uix:TargetAnchorable>
-                  </uix:NTypeInto.Target>
-                  <uix:NTypeInto.VerifyOptions>
-                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                        <InArgument x:TypeArguments="x:Boolean" />
-                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                        <InArgument x:TypeArguments="x:Double" />
-                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                    </uix:VerifyExecutionTypeIntoOptions>
-                  </uix:NTypeInto.VerifyOptions>
-                </uix:NTypeInto>
-                <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_1">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="s:DateTime">[dateCheckDate]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="s:DateTime">[DateTime.Parse(strCheckDate)]</InArgument>
-                  </Assign.Value>
-                </Assign>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Day'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Text="[dateCheckDate.Day.ToString()]" Version="V5">
-                  <uix:NTypeInto.Target>
-                    <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/checks/search" CVScreenId="4f22f928-fae2-4bf8-8702-64866bbcf6ff" ContentHash="CDDKBzHKl0mQ81PRVF7rUg" CvElementArea="466, 525, 487, 36" CvType="InputBox" DesignTimeRectangle="468, 526, 485, 34" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='checkDay' tag='INPUT' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d61b349e-a8fe-4041-9963-c9f40a451bc6" InformativeScreenshot="0b10794bc9ea172eef11f748f5e81be3.jpg" IsResponsive="True" Reference="yLD9KT3v50SKO-Rr8dsL-Q/OmHXoWOTtk2KMDzE9HchNg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Search Client Check' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
-                      <uix:TargetAnchorable.Anchors>
-                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                          <uix:Target CVScreenId="4f22f928-fae2-4bf8-8702-64866bbcf6ff" CvTextArea="467, 504, 27, 17" CvTextArgument="Day" CvType="Text" DesignTimeRectangle="468, 501, 26, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Day' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Day' /&gt;" Guid="030b82f1-5f66-4651-9659-afa70326f08a" SearchSteps="FuzzySelector, CV" />
-                        </scg:List>
-                      </uix:TargetAnchorable.Anchors>
-                    </uix:TargetAnchorable>
-                  </uix:NTypeInto.Target>
-                  <uix:NTypeInto.VerifyOptions>
-                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                      <uix:VerifyExecutionTypeIntoOptions.Retry>
-                        <InArgument x:TypeArguments="x:Boolean" />
-                      </uix:VerifyExecutionTypeIntoOptions.Retry>
-                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                        <InArgument x:TypeArguments="x:Double" />
-                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                    </uix:VerifyExecutionTypeIntoOptions>
-                  </uix:NTypeInto.VerifyOptions>
-                </uix:NTypeInto>
-                <uix:NSelectItem DisplayName="Select Item 'January'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="dateCheckDate.ToString(&quot;MMMM&quot;, System.Globalization.CultureInfo.InvariantCulture)" ScopeIdentifier="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Version="V5">
-                  <uix:NSelectItem.Items>
-                    <scg:List x:TypeArguments="x:String" Capacity="13">
-                      <x:String>---</x:String>
-                      <x:String>January</x:String>
-                      <x:String>February</x:String>
-                      <x:String>March</x:String>
-                      <x:String>April</x:String>
-                      <x:String>May</x:String>
-                      <x:String>June</x:String>
-                      <x:String>July</x:String>
-                      <x:String>August</x:String>
-                      <x:String>September</x:String>
-                      <x:String>October</x:String>
-                      <x:String>November</x:String>
-                      <x:String>December</x:String>
-                    </scg:List>
-                  </uix:NSelectItem.Items>
-                  <uix:NSelectItem.Target>
-                    <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/checks/search" CVScreenId="47d473f3-b8dc-47cd-8529-5925ba4046ea" ContentHash="6toMvAy790OKlpdvRXFNKQ" CvElementArea="466, 599, 223, 36" CvType="InputBox" DesignTimeRectangle="468, 600, 220, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-role='button' tag='BUTTON' type='button' class='btn dropdown-toggle btn-default' aaname='January' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='January' /&gt;" Guid="56db4bc4-2ea9-4329-9e91-a6c8a1dc4bad" InformativeScreenshot="0df26a61b9d6ff23c37c9bd19f24ac4e.jpg" Reference="yLD9KT3v50SKO-Rr8dsL-Q/Ph62IEr-N0yLkUAV3Cy6hg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Search Client Check' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
-                      <uix:TargetAnchorable.Anchors>
-                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                          <uix:Target CVScreenId="47d473f3-b8dc-47cd-8529-5925ba4046ea" CvTextArea="466, 577, 49, 15" CvTextArgument="Month:" CvType="Text" DesignTimeRectangle="468, 575, 47, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Month:' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Month:' /&gt;" Guid="b59b5780-f781-4cf0-bdf0-969163403a9c" SearchSteps="FuzzySelector, CV" />
-                        </scg:List>
-                      </uix:TargetAnchorable.Anchors>
-                    </uix:TargetAnchorable>
-                  </uix:NSelectItem.Target>
-                </uix:NSelectItem>
-                <uix:NSelectItem DisplayName="Select Item '2023'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="2023" ScopeIdentifier="95166c85-64dc-45b6-a7ac-452e1f5ebd8a" Version="V5">
-                  <uix:NSelectItem.Items>
-                    <scg:List x:TypeArguments="x:String" Capacity="5">
-                      <x:String>---</x:String>
-                      <x:String>2026</x:String>
-                      <x:String>2025</x:String>
-                      <x:String>2024</x:String>
-                      <x:String>2023</x:String>
-                    </scg:List>
-                  </uix:NSelectItem.Items>
-                  <uix:NSelectItem.Target>
-                    <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/checks/search" CVScreenId="47d473f3-b8dc-47cd-8529-5925ba4046ea" ContentHash="fL-CvJeLmE6kC4--l8I__w" CvElementArea="466, 668, 223, 36" CvType="InputBox" DesignTimeRectangle="468, 669, 220, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='2023' aria-role='button' tag='BUTTON' type='button' class='btn dropdown-toggle btn-default' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='2023' /&gt;" Guid="60b150f6-144c-4e36-a12c-4295b01b99e9" InformativeScreenshot="e5c030c63ebbcc1c4e7b9b2a43c11757.jpg" Reference="yLD9KT3v50SKO-Rr8dsL-Q/dnpFChLGQUWolNad6_CbWw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Search Client Check' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
-                      <uix:TargetAnchorable.Anchors>
-                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                          <uix:Target CVScreenId="47d473f3-b8dc-47cd-8529-5925ba4046ea" CvTextArea="466, 647, 37, 13" CvTextArgument="Year:" CvType="Text" DesignTimeRectangle="468, 644, 34, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Year:' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Year:' /&gt;" Guid="1a39cd97-d23a-4b9b-a504-53b896274a7f" SearchSteps="FuzzySelector, CV" />
-                        </scg:List>
-                      </uix:TargetAnchorable.Anchors>
-                    </uix:TargetAnchorable>
-                  </uix:NSelectItem.Target>
-                </uix:NSelectItem>
               </Sequence>
             </Sequence>
           </ActivityAction>

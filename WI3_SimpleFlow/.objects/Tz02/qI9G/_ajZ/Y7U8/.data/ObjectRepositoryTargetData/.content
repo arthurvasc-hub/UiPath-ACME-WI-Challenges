@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="de-gwPZ12EaVth7tQtvNSg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/vendors/search-by-name/Clipboard%20Papersaaa" DesignTimeRectangle="484, 474, 968, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='P' aaname='No vendor based on the name you have entered could be found in the database. Please contact the VDD team if you need to add a Vendor to the System.' /&gt;" Guid="929aca74-4039-4c8b-8379-8fb4c1823c6f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Search Results' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="52ba63028b84b9096492682d4196c31b.jpg" xmlns="">0Wn4NNL77yka7PPDeKCxgQg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

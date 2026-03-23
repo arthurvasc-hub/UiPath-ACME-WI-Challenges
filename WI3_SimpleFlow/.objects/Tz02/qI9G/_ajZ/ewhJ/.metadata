@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Currency",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "ewhJMTIp-UWLSwAlAs_mWg",
+  "Reference": "noGuhPKi2E6Z5ZY_-Baf5A/ewhJMTIp-UWLSwAlAs_mWg",
+  "ParentRef": "noGuhPKi2E6Z5ZY_-Baf5A/_ajZ-WYPDkm7sHjUDxKLNQ",
+  "Created": "2026-03-22T23:10:33.9584194Z",
+  "Updated": "2026-03-22T23:10:33.9584194Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

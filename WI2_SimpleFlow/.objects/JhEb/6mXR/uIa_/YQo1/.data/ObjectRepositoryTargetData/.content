@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rI5MJgV9S06OhL_MEoxn3A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/testdata/checks/291/Check-Request-For-68130529.pdf" CVScreenId="cabc244f-1fc8-4d72-b7d0-11083a34842b" CvElementArea="1814, 198, 20, 20" CvType="Icon" DesignTimeRectangle="1814, 199, 20, 20" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Check-Request-For-68130529.pdf' role='document' /&gt;&lt;ctrl name='Baixar' role='push button' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;" Guid="8ef4c29b-9c91-471b-8e18-b7dab34a9750" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACTSURBVEhL7dLhCYAgEIbhBnM4t3AKt3AKt3AC4xMO5NK7E4wI/PFQHOVL2uWcq2+6+GC3E1AtBVJKDZ9LTkD1fSDGWEMI7b4P4EpziRrAIqWUdqUAYOa9fzzPqQGgSM+yOJgC0Eesi4M5AIisLA7TAO07n3P0ZXxOxAD9KRI6cP6+Ghgd7EjOWdy2aWCXE1D9P3ADncI2k1srkBkAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Check-Request-For-68130529.pdf - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="cabc244f-1fc8-4d72-b7d0-11083a34842b" CvElementArea="1848, 198, 23, 22" CvType="Icon" DesignTimeRectangle="1850, 199, 20, 20" FullSelectorArgument="&lt;ctrl name='Check-Request-For-68130529.pdf' role='document' /&gt;&lt;ctrl name='Imprimir' role='push button' /&gt;&lt;ctrl idx='2' role='grouping' /&gt;" Guid="0e16dc14-378c-4aea-ab57-c84b84b0f084" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVEhL7ZLBCcUgEERTmF1YhV3YhVXYhVXYhRUY5oNhmRhXSQL/kMMDWbP7dOJmjKlvsnHhaT6BylBQSpmC+5YEKaUaQuiCvdsCDOJ6A3v/J3DOHVdfAT3o5XknQc75B+etgR5IeN5JoMXCYKj3vsYYu3HdFmC4tfbyfwwFnPMV+HZJ0N6+XPdoj0GueV5XIBnF1Q7BtxkKJLMCrktUwUxE3LckmIH7pgVP8AlUXhfsAnG0YMfwcbgAAAAASUVORK5CYII=" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="00a4fe265bc600316bbc2f6af386defd.jpg" xmlns="">0_XQIRLfpK0OJ18ULGK3lmg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

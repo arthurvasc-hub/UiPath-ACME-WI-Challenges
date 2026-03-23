@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="O_1lsKMRfUm1UmUItra04Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/testdata/invoices/291/Invoice-647154.pdf" DesignTimeRectangle="776, 304, 576, 39" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Invoice-647154.pdf' role='document' /&gt;&lt;ctrl name='Documento PDF com 1 página' role='document' /&gt;&lt;ctrl name='Página 1' role='pane' /&gt;&lt;ctrl text='Invoice No. *' /&gt;" Guid="d860700d-c603-4754-831f-c17ffc496e18" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Invoice-647154.pdf - Google Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="72d31a93ee3aea1200b72a9ab11df554.jpg" xmlns="">0m72YGyzw20eEveILYXurzg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

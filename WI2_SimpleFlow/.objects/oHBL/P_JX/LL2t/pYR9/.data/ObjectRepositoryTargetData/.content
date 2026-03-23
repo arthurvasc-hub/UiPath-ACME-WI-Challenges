@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9xFsEgOniEG3BY9l8GOgSA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="7061b6e4-9007-4833-9b62-17450e5dc3c1" CvElementArea="152, 164, 178, 25" CvType="InputBox" DesignTimeRectangle="153, 165, 176, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlname='groupBox1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='textBox2' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;" Guid="85c675a8-e1a6-4144-8dc1-9f4b97ec73a8" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='acme-system3.exe' ctrlname='SearchCheckCopy' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="7061b6e4-9007-4833-9b62-17450e5dc3c1" CvTextArea="31, 172, 86, 13" CvTextArgument="Check Number" CvType="Text" DesignTimeRectangle="30, 170, 89, 15" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlname='groupBox1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' /&gt;&lt;wnd ctrlname='label1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' check:text='Check Number' /&gt;" Guid="649c283f-ce2b-4016-8a04-09e413fb8d91" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2fb9ae58169dede4064afdd5d9dd8f2b.jpg" xmlns="">0zhjYXHHkSka074A_Ml5wvg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

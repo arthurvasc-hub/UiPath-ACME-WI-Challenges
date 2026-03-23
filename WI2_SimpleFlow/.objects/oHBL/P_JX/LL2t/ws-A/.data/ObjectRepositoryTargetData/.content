@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WM4f7avvUEqMnjwpqz7KNw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="3f1bc0d3-17d5-447a-8186-e78501099bd4" CvElementArea="260, 393, 230, 37" CvTextArea="335, 404, 77, 14" CvTextArgument="Client Checks" CvType="Button" DesignTimeRectangle="260, 392, 230, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlname='button2' /&gt;" Guid="9f256d76-4427-4d6c-b5b5-15220aff28b6" ScopeSelectorArgument="&lt;wnd app='acme-system3.exe' ctrlname='ClientDetails' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3f1bc0d3-17d5-447a-8186-e78501099bd4" CvElementArea="20, 393, 230, 38" CvTextArea="91, 404, 86, 14" CvTextArgument="Client Accounts" CvType="Button" DesignTimeRectangle="20, 392, 230, 38" ElementType="Button" FuzzySelectorArgument="&lt;wnd ctrlname='button1' matching:ctrlname='fuzzy' fuzzylevel:ctrlname='0.0' check:text='Client Accounts' /&gt;" Guid="6a984216-cc79-4888-a2f3-d5334d61556f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="081e8098b6423a59f671397290cb95a8.jpg" xmlns="">0YZS9KUR9hk-Dwu1o1BAaIg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Download PDF Invoice",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "UiXaLj4xJ02UD7X30is44A",
+  "Reference": "noGuhPKi2E6Z5ZY_-Baf5A/UiXaLj4xJ02UD7X30is44A",
+  "ParentRef": "noGuhPKi2E6Z5ZY_-Baf5A/_ajZ-WYPDkm7sHjUDxKLNQ",
+  "Created": "2026-03-22T20:54:45.7516698Z",
+  "Updated": "2026-03-22T20:54:45.7516698Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.28.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
