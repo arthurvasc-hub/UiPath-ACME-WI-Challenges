@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GnNw7igzM0KBiTJH2Ejp9g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="acme-test.uipath.com/login" CVScreenId="1b47a24b-1c0a-4176-83b8-f4fd1498067d" CvElementArea="466, 641, 63, 36" CvTextArea="479, 651, 37, 18" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="468, 642, 60, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" Guid="d6203444-490e-4a2f-9817-6770a601c189" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="1b47a24b-1c0a-4176-83b8-f4fd1498067d" CvElementArea="530, 640, 174, 37" CvTextArea="544, 651, 148, 17" CvTextArgument="Forgot Your Password?" CvType="Button" DesignTimeRectangle="532, 642, 172, 34" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='                                 Forgot Your Password?                             ' tag='A' type='' class='btn bg-warning' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Forgot Your Password?' /&gt;" Guid="74b1fbd1-3438-4686-955f-d8e8c73fb071" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3c285ef2163199616d83a75f0abe89d6.jpg" xmlns="">0JJ-4oaOvDkKeOKyq-0Anhg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

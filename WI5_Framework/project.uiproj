@@ -1,0 +1,6 @@
+{
+  "Name": "WI5_Framework",
+  "ProjectType": "Process",
+  "Description": "Processo WI5 - ACME ",
+  "MainFile": "Main.xaml"
+}

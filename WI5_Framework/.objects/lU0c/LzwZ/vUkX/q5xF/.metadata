@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Welcome, arthurvasc2@gm…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "q5xFEla0KU2A-frODv7gZA",
+  "Reference": "MY9TZGD9OUCZH4KdC30SZA/q5xFEla0KU2A-frODv7gZA",
+  "ParentRef": "MY9TZGD9OUCZH4KdC30SZA/vUkXsoBaCE-ke7RQWPEWGg",
+  "Created": "2026-03-30T22:57:12.7103288Z",
+  "Updated": "2026-03-30T22:57:12.7103288Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.1.0.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.12.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
