@@ -385,7 +385,7 @@
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[Environment.CurrentDirectory + &quot;\Data\Temp&quot;]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="416,184" sap2010:WorkflowViewState.IdRef="MoveFile_2" Overwrite="True" Path="[strFilePath]">
+                                      <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[Environment.CurrentDirectory + &quot;\Data\Temp\&quot;]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="416,184" sap2010:WorkflowViewState.IdRef="MoveFile_2" Overwrite="True" Path="[strFilePath]">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -456,7 +456,7 @@
                               <OutArgument x:TypeArguments="x:String">[strCaminhoPasta]</OutArgument>
                             </Assign.To>
                             <Assign.Value>
-                              <InArgument x:TypeArguments="x:String">[Environment.CurrentDirectory + "\Data\Temp"]</InArgument>
+                              <InArgument x:TypeArguments="x:String">[Environment.CurrentDirectory + "\Data\Temp\"]</InArgument>
                             </Assign.Value>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -466,9 +466,7 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </Assign>
                           <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="488,168" sap2010:WorkflowViewState.IdRef="InvokeMethod_2" MethodName="WriteAllText" TargetType="si:File">
-                            <InArgument x:TypeArguments="x:String">
-                              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="strCaminhoPasta &amp; strArquivoFinal &amp; &quot;.csv&quot;" />
-                            </InArgument>
+                            <InArgument x:TypeArguments="x:String">[strCaminhoPasta &amp; strArquivoFinal &amp; ".csv"]</InArgument>
                             <InArgument x:TypeArguments="x:String">
                               <Literal x:TypeArguments="x:String" Value="" />
                             </InArgument>
@@ -518,7 +516,7 @@
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:AppendWriteCsvFile FilePath="{x:Null}" AddHeaders="True" CsvAction="Write" DataTable="[dtMensal]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" sap:VirtualizedContainerService.HintSize="416,264" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_1" PathResource="[LocalResource.FromPath(&#xD;&#xA;    &quot;C:\Projetos\UiPath-ACME-WI-Challenges\WI4_reFramework\Data\Temp\Yearly-Report-2025-&quot; &amp; strTaxId &amp; &quot;.csv&quot;&#xD;&#xA;)]" ShouldQuote="True">
+                                        <ui:AppendWriteCsvFile FilePath="{x:Null}" AddHeaders="True" CsvAction="Write" DataTable="[dtMensal]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" sap:VirtualizedContainerService.HintSize="416,264" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_1" PathResource="[LocalResource.FromPath(&#xD;&#xA;   Environment.CurrentDirectory &amp; &quot;\Data\Temp\Yearly-Report-2025-&quot; &amp; strTaxId &amp; &quot;.csv&quot;&#xD;&#xA;)]" ShouldQuote="True">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -536,7 +534,7 @@
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:AppendWriteCsvFile FilePath="{x:Null}" AddHeaders="True" CsvAction="Append" DataTable="[dtMensal]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" sap:VirtualizedContainerService.HintSize="416,264" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_2" PathResource="[LocalResource.FromPath(&#xD;&#xA;    &quot;C:\Projetos\UiPath-ACME-WI-Challenges\WI4_reFramework\Data\Temp\Yearly-Report-2025-&quot; &amp; strTaxId &amp; &quot;.csv&quot;&#xD;&#xA;)]" ShouldQuote="True" />
+                                        <ui:AppendWriteCsvFile FilePath="{x:Null}" AddHeaders="True" CsvAction="Append" DataTable="[dtMensal]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Write CSV" sap:VirtualizedContainerService.HintSize="416,264" sap2010:WorkflowViewState.IdRef="AppendWriteCsvFile_2" PathResource="[LocalResource.FromPath(&#xD;&#xA;  Environment.CurrentDirectory  &amp; &quot;\Data\Temp\Yearly-Report-2025-&quot; &amp; strTaxId &amp; &quot;.csv&quot;&#xD;&#xA;)]" ShouldQuote="True" />
                                       </Sequence>
                                     </If.Else>
                                   </If>
@@ -550,7 +548,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:ForEach>
-                          <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[Environment.CurrentDirectory + &quot;\Data\Output\&quot;]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="488,184" sap2010:WorkflowViewState.IdRef="MoveFile_3" Overwrite="True" Path="[Environment.CurrentDirectory + &quot;\Data\Temp&quot; &amp; &quot;Yearly-Report-2025-&quot; &amp; strTaxId &amp; &quot;.csv&quot;]">
+                          <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[Environment.CurrentDirectory + &quot;\Data\Output\&quot;]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="488,184" sap2010:WorkflowViewState.IdRef="MoveFile_3" Overwrite="True" Path="[Environment.CurrentDirectory + &quot;\Data\Temp\&quot; &amp; &quot;Yearly-Report-2025-&quot; &amp; strTaxId &amp; &quot;.csv&quot;]">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -637,7 +635,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NClick>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into '&amp;Nome'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="a3379b49-d388-4482-912c-26b2b94d4eb2" Text="[&quot;C:\Projetos\UiPath-ACME-WI-Challenges\WI4_reFramework\Data\Output\&quot; &amp; &quot;Yearly-Report-2025-&quot; &amp; strTaxId &amp; &quot;.csv&quot;]" Version="V5">
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into '&amp;Nome'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="a3379b49-d388-4482-912c-26b2b94d4eb2" Text="[Environment.CurrentDirectory &amp; &quot;\Data\Output\&quot; &amp; &quot;Yearly-Report-2025-&quot; &amp; strTaxId &amp; &quot;.csv&quot;]" Version="V5">
                           <uix:NTypeInto.Target>
                             <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/reports/upload" CVScreenId="57550f74-6c61-4a7d-9ab5-dbbd70cdbfd3" ContentHash="XjP_DhR4kUSdxHPwFSRjMg" CvElementArea="169, 951, 1529, 26" CvType="InputBox" DesignTimeRectangle="183, 957, 1492, 15" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;" Guid="a4c31c0e-c385-4a55-95a6-0ad666728033" InformativeScreenshot="163dcd85e301f122a7b4646b5094caa1.jpg" IsResponsive="True" Reference="HV4E48Q460mzvRDpqibb-g/mYKcC-lFi02eDUG3npHO5g" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                               <uix:TargetAnchorable.Anchors>
