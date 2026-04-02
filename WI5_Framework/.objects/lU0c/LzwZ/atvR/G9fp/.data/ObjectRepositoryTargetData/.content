@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="Umh6Rb66lkitvlhEAXWZJA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="sha1-online.com" CVScreenId="d4415717-60cd-4557-8a65-152676a6f0c5" CvElementArea="1109, 360, 50, 23" CvTextArea="1117, 365, 34, 13" CvTextArgument="hash" CvType="Button" DesignTimeRectangle="1111, 362, 47, 21" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" Guid="46de5b86-b311-40d0-8f07-f6326ed1d49d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHA1 online' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
-      <imageRef attrName="InformativeScreenshot" originalValue="4becb83fea48aca1f31ae1135c0c35d9.jpg" xmlns="">0Jwl6gpahWkm1RWlTXot-UQ</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">Click</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>
