@@ -80,7 +80,7 @@
       "typedDataTableDto": {
         "id": 3,
         "idRef": "NExtractDataGeneric`1_3",
-        "hash": "NExtractDataGeneric`1_3|DataTable|7kdRZuLfdn4IKWe9vC7BXlrJV7UPeBKoYvTH1fo",
+        "hash": "NExtractDataGeneric`1_3|DataTable|9VrA8UxfXlKputHPAf52ermCeHwbayfa7jdxxHeg4",
         "dataType": "System.Data.DataTable, System.Data.Common",
         "columns": [
           {
@@ -94,20 +94,12 @@
           {
             "columnName": "Type",
             "dataType": "System.String, System.Private.CoreLib"
-          },
-          {
-            "columnName": "Status",
-            "dataType": "System.String, System.Private.CoreLib"
-          },
-          {
-            "columnName": "Date",
-            "dataType": "System.String, System.Private.CoreLib"
           }
         ]
       },
       "entityAssemblyKey": {
         "name": "Studio.Generated.TypedDataTable3",
-        "hash": "NExtractDataGeneric`1_3|DataTable|VdSZCR2rJl0txDZfIy3NjspkNxZp0kA2yRs9BVgkntk",
+        "hash": "NExtractDataGeneric`1_3|DataTable|KhqJooNJRISrGr14EigwY30bgmQXwSNuFdvamQFuo",
         "assemblyName": "Studio.Generated.TypedDataTable3"
       }
     }
