@@ -52,6 +52,7 @@
       <x:String>UiPath.UIAutomationNext.Contracts</x:String>
       <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
       <x:String>System.Security</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -113,88 +114,144 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ACME_UpdateSHA1" sap:VirtualizedContainerService.HintSize="1877,3717.0000000000005" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ACME_UpdateSHA1" sap:VirtualizedContainerService.HintSize="880,4351" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strClientId" />
       <Variable x:TypeArguments="x:String" Name="strClientName" />
       <Variable x:TypeArguments="x:String" Name="strClientCountry" />
       <Variable x:TypeArguments="x:String" Name="strHashResult" />
+      <Variable x:TypeArguments="x:Boolean" Name="boolSucess" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[in_dtExtractedWI5]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="558,3694" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[in_dtExtractedWI5]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="656,4328" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="556,3521" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="654,4155" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome ACME System 1 - Work Items" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="522,3461" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="632b1afe-a851-4be5-bd0c-82ffdf9cb280" Version="V2">
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Chrome ACME System 1 - Work Items" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="620,4095" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="632b1afe-a851-4be5-bd0c-82ffdf9cb280" Version="V2">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="520,3267" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="618,3901" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="Capturar Client Details" sap:VirtualizedContainerService.HintSize="486,758" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <Sequence DisplayName="Capturar Client Details" sap:VirtualizedContainerService.HintSize="584,1515" sap2010:WorkflowViewState.IdRef="Sequence_2">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="Delay_1" />
-                      <uix:NGoToUrl DisplayName="Go To URL - Work item details" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" ScopeIdentifier="632b1afe-a851-4be5-bd0c-82ffdf9cb280" Url="[&quot;https://acme-test.uipath.com/work-items/&quot; &amp; row(&quot;WIID&quot;).ToString]" Version="V5" />
-                      <uix:NGetText DisplayName="Get Text 'Client ID'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="632b1afe-a851-4be5-bd0c-82ffdf9cb280" TextString="[strClientId]" Version="V5">
-                        <uix:NGetText.Target>
-                          <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/109473840" CVScreenId="d871e0b2-26b9-4a12-afc6-dcb515a59142" ContentHash="N91t7oLRFUKCChlp13jqBA" CvType="AnyWordGroup" DesignTimeRectangle="563, 515, 61, 14" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="5b8a0acd-a2d7-482c-adea-25e55e862197" InformativeScreenshot="472950c1595a64ae947d054d30289ac8.jpg" Reference="MY9TZGD9OUCZH4KdC30SZA/rLqBBsRRKku1Jk_ZuuFvsg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive">
-                            <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CVScreenId="d871e0b2-26b9-4a12-afc6-dcb515a59142" CvTextArea="498, 516, 63, 14" CvTextArgument="Client ID:" CvType="Text" DesignTimeRectangle="499, 515, 61, 16" FuzzyAccuracy="0.8" FuzzySelectorArgument="&lt;webctrl aaname='Client ID:' visibleinnertext='Client ID:' check:innerText='Client ID:' /&gt;" Guid="5a2df4f2-fcc0-40d4-bfc7-ac9c79a21dfd" SearchSteps="FuzzySelector, CV" />
-                              </scg:List>
-                            </uix:TargetAnchorable.Anchors>
-                          </uix:TargetAnchorable>
-                        </uix:NGetText.Target>
-                      </uix:NGetText>
-                      <uix:NGetText DisplayName="Get Text 'Client Name'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="632b1afe-a851-4be5-bd0c-82ffdf9cb280" TextString="[strClientName]" Version="V5">
-                        <uix:NGetText.Target>
-                          <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/109473840" CVScreenId="49dbb4d6-1b99-4037-98b9-a68473dcb5fc" ContentHash="HbCH862yDkqNghoQpAkCgg" CvType="AnyWordGroup" DesignTimeRectangle="587, 535, 85, 15" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="c0c7224c-03e2-46c2-b43c-6c9fb112d775" InformativeScreenshot="1c72bc2ec8f898b60e864b7290092388.jpg" Reference="MY9TZGD9OUCZH4KdC30SZA/77-YrhR0aUuOhaHbqARfGQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive">
-                            <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CVScreenId="49dbb4d6-1b99-4037-98b9-a68473dcb5fc" CvTextArea="498, 535, 87, 15" CvTextArgument="Client Name:" CvType="Text" DesignTimeRectangle="499, 535, 86, 16" FuzzySelectorArgument="&lt;webctrl aaname='Client Name:' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' visibleinnertext='Client Name:' check:innerText='Client Name:' /&gt;" Guid="ce9044d5-0c3e-44db-9a0e-46ad25f323e2" SearchSteps="FuzzySelector, CV" />
-                              </scg:List>
-                            </uix:TargetAnchorable.Anchors>
-                          </uix:TargetAnchorable>
-                        </uix:NGetText.Target>
-                      </uix:NGetText>
-                      <uix:NGetText DisplayName="Get Text 'Client Country'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,134" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="632b1afe-a851-4be5-bd0c-82ffdf9cb280" TextString="[strClientCountry]" Version="V5">
-                        <uix:NGetText.Target>
-                          <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/109473840" CVScreenId="e938e185-0400-4cfb-85c8-afb9edef564e" ContentHash="LyR0KVq390KqxDcO9TN8HQ" CvType="AnyWordGroup" DesignTimeRectangle="603, 555, 60, 17" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="58225352-3538-40e7-8205-088bc8c4bd1f" InformativeScreenshot="c8449f62c2d4a7a5cc0d19a25fb7ecc5.jpg" Reference="MY9TZGD9OUCZH4KdC30SZA/cyeroCxCzUGpkVvv6a-OOQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive">
-                            <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CVScreenId="e938e185-0400-4cfb-85c8-afb9edef564e" CvTextArea="497, 555, 104, 17" CvTextArgument="Client Country:" CvType="Text" DesignTimeRectangle="499, 555, 101, 16" FuzzySelectorArgument="&lt;webctrl aaname='Client Country:' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Client Country:' /&gt;" Guid="324b5fa0-5c0f-4210-aebd-2da3b4ee1af5" SearchSteps="FuzzySelector, CV" />
-                              </scg:List>
-                            </uix:TargetAnchorable.Anchors>
-                          </uix:TargetAnchorable>
-                        </uix:NGetText.Target>
-                      </uix:NGetText>
+                      <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="550,123" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                      <uix:NGoToUrl DisplayName="Go To URL - Work item details" sap:VirtualizedContainerService.HintSize="550,123" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" ScopeIdentifier="632b1afe-a851-4be5-bd0c-82ffdf9cb280" Url="[&quot;https://acme-test.uipath.com/work-items/&quot; &amp; row(&quot;WIID&quot;).ToString]" Version="V5" />
+                      <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="550,123" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                      <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="550,1054" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3">
+                        <ui:RetryScope.ActivityBody>
+                          <ActivityAction>
+                            <Sequence DisplayName="Ação" sap:VirtualizedContainerService.HintSize="548,793" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NCheckState DisplayName="Check App State '109503577'" EnableIfNotExists="False" Exists="[boolSucess]" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="514,733" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="632b1afe-a851-4be5-bd0c-82ffdf9cb280" Version="V5">
+                                <uix:NCheckState.IfExists>
+                                  <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="512,405" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                    <Sequence.Variables>
+                                      <Variable x:TypeArguments="x:String" Name="strClientInfo" />
+                                    </Sequence.Variables>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NGetText DisplayName="Get Text 'Client Info'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="478,143" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="632b1afe-a851-4be5-bd0c-82ffdf9cb280" ScrapingMethod="TextAttribute" TextString="[strClientInfo]" Version="V5">
+                                      <uix:NGetText.Target>
+                                        <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/109503574" ContentHash="4taXW6e5eEOgxBV5j9i4uA" DesignTimeRectangle="499, 461, 373, 60" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" Guid="c5e370b0-db5e-469e-b930-d25a332b9eae" InformativeScreenshot="39458f69ef3cdc6a0b12e7f7fed2663a.jpg" Reference="MY9TZGD9OUCZH4KdC30SZA/rLqBBsRRKku1Jk_ZuuFvsg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                      </uix:NGetText.Target>
+                                    </uix:NGetText>
+                                    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478,202" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                                      <ui:MultipleAssign.AssignOperations>
+                                        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[strClientId]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(strClientInfo, "(?&lt;=Client ID:\s)(\w+)").Value.Trim]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[strClientName]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(strClientInfo, "(?&lt;=Client Name:\s)(.*)").Value.Trim]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                                            <ui:AssignOperation.To>
+                                              <OutArgument x:TypeArguments="x:String">[strClientCountry]</OutArgument>
+                                            </ui:AssignOperation.To>
+                                            <ui:AssignOperation.Value>
+                                              <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(strClientInfo, "(?&lt;=Client Country:\s)(.*)").Value.Trim]</InArgument>
+                                            </ui:AssignOperation.Value>
+                                          </ui:AssignOperation>
+                                        </scg:List>
+                                      </ui:MultipleAssign.AssignOperations>
+                                    </ui:MultipleAssign>
+                                  </Sequence>
+                                </uix:NCheckState.IfExists>
+                                <uix:NCheckState.IfNotExists>
+                                  <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Sequence>
+                                </uix:NCheckState.IfNotExists>
+                                <uix:NCheckState.Target>
+                                  <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/109503577" CVScreenId="188db20d-380b-4420-8f4d-df5a476bd7f7" ContentHash="4MZat-JaDkK54GXUAWO7CA" CvTextArea="935, 598, 90, 18" CvTextArgument="[row(&quot;WIID&quot;).ToString]" CvType="Text" DesignTimeRectangle="934, 598, 91, 18" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="455d8c42-31a5-4fdb-842b-ee0b388c72e7" InformativeScreenshot="1de13f8767988a16d35a9aa546e6fd64.jpg" Reference="MY9TZGD9OUCZH4KdC30SZA/Z4Dg3OReU0S7bEssUIoMJw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector, FuzzySelector, CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CVScreenId="188db20d-380b-4420-8f4d-df5a476bd7f7" CvTextArea="884, 599, 47, 16" CvTextArgument="WIID:" CvType="Text" DesignTimeRectangle="886, 598, 45, 20" FuzzySelectorArgument="&lt;webctrl type='' tag='B' class='' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='WIID:' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='WIID:' /&gt;" Guid="4d1c72f6-a795-4201-a92d-16502cb06250" SearchSteps="FuzzySelector, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NCheckState.Target>
+                              </uix:NCheckState>
+                            </Sequence>
+                          </ActivityAction>
+                        </ui:RetryScope.ActivityBody>
+                        <ui:RetryScope.Condition>
+                          <ActivityFunc x:TypeArguments="x:Boolean">
+                            <ui:CheckTrue ErrorMessage="{x:Null}" DisplayName="Check True" Expression="[boolSucess]" sap:VirtualizedContainerService.HintSize="548,131" sap2010:WorkflowViewState.IdRef="CheckTrue_1" />
+                          </ActivityFunc>
+                        </ui:RetryScope.Condition>
+                      </ui:RetryScope>
                     </Sequence>
-                    <Sequence DisplayName="Preenche valores no SHA1" sap:VirtualizedContainerService.HintSize="486,789" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence DisplayName="Preenche valores no SHA1" sap:VirtualizedContainerService.HintSize="584,789" sap2010:WorkflowViewState.IdRef="Sequence_5">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -202,26 +259,16 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <uix:NGoToUrl DisplayName="Go To URL - sha1-online.com" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" ScopeIdentifier="632b1afe-a851-4be5-bd0c-82ffdf9cb280" Url="https://www.sha1-online.com/" Version="V5" />
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'SHA1 and other hash fun…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="632b1afe-a851-4be5-bd0c-82ffdf9cb280" Text="[$&quot;{strClientId}-{strClientName}-{strClientCountry}&quot;]" Version="V5">
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'SHA1 and other hash fun…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="632b1afe-a851-4be5-bd0c-82ffdf9cb280" Text="[strClientId &amp; &quot;-&quot; &amp; strClientName &amp; &quot;-&quot; &amp; strClientCountry]" Version="V5">
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable BrowserURL="sha1-online.com" CVScreenId="e6d7439a-e18f-45f5-a4f2-897d16265525" ContentHash="AOTueFu_HEaBs-RFoyWvAg" CvElementArea="778, 361, 332, 22" CvType="InputBox" DesignTimeRectangle="778, 362, 333, 21" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='textToHashId' tag='INPUT' /&gt;" Guid="758d2d61-12c6-4c08-a269-8695e6822959" InformativeScreenshot="a0487106a39ef7af2fa7af52124b4097.jpg" Reference="MY9TZGD9OUCZH4KdC30SZA/DcelJAL5tkKjRWgJJBVowA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHA1 online' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                             <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                 <uix:Target CVScreenId="e6d7439a-e18f-45f5-a4f2-897d16265525" CvTextArea="656, 316, 624, 27" CvTextArgument="SHA1 and other hash functions online generator" CvType="Text" DesignTimeRectangle="492, 313, 952, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' aaname='SHA1 and other hash functions online generator' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='SHA1 and other hash functions online generator' /&gt;" Guid="bc3daa8d-e9ba-4495-9fa0-7dcb107e3c91" SearchSteps="FuzzySelector, CV" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
                         </uix:NTypeInto.Target>
-                        <uix:NTypeInto.VerifyOptions>
-                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                            <uix:VerifyExecutionTypeIntoOptions.Retry>
-                              <InArgument x:TypeArguments="x:Boolean" />
-                            </uix:VerifyExecutionTypeIntoOptions.Retry>
-                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                              <InArgument x:TypeArguments="x:Double" />
-                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                          </uix:VerifyExecutionTypeIntoOptions>
-                        </uix:NTypeInto.VerifyOptions>
                       </uix:NTypeInto>
                       <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'hash'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="632b1afe-a851-4be5-bd0c-82ffdf9cb280" Version="V5">
                         <uix:NClick.Target>
@@ -232,7 +279,7 @@
                         <uix:NGetText.Target>
                           <uix:TargetAnchorable BrowserURL="sha1-online.com" CVScreenId="b62ae19c-d130-4229-8963-7c76c97139fd" ContentHash="6rpoATwNb0S7Swic65tzbg" CvType="AnyWordGroup" DesignTimeRectangle="818, 441, 469, 22" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='result-sha1' tag='SPAN' /&gt;" Guid="560ad193-1077-4e5d-b4d5-2d149d0dd409" InformativeScreenshot="e34ae38258d8eccc6408a76b07fe9305.jpg" Reference="MY9TZGD9OUCZH4KdC30SZA/UYGzKrcjJ0GArfkWK1t3NA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHA1 online' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                             <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                 <uix:Target CVScreenId="b62ae19c-d130-4229-8963-7c76c97139fd" CvElementArea="922, 404, 91, 21" CvType="InputBox" DesignTimeRectangle="924, 405, 88, 19" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" Guid="507dfe7a-3280-4267-99e9-af2ea182e965" SearchSteps="Selector, CV" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
@@ -240,7 +287,7 @@
                         </uix:NGetText.Target>
                       </uix:NGetText>
                     </Sequence>
-                    <Sequence DisplayName="Atualiza o Work Item" sap:VirtualizedContainerService.HintSize="486,1660" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <Sequence DisplayName="Atualiza o Work Item" sap:VirtualizedContainerService.HintSize="584,1537" sap2010:WorkflowViewState.IdRef="Sequence_7">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -252,7 +299,7 @@
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/109473840" CVScreenId="548ae7f0-5089-4f26-9ec5-2115a641c484" ContentHash="GPAtNk5tNE20ldPH8e5stQ" CvElementArea="427, 398, 1082, 57" CvType="InputBox" DesignTimeRectangle="429, 400, 1078, 54" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='newComment' tag='TEXTAREA' type='text' class='form-control' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a2de3fe9-47a8-4853-be1f-6a971afd0f61" InformativeScreenshot="20c127854fa7642cc8f8056f4e95a7a6.jpg" IsResponsive="True" Reference="MY9TZGD9OUCZH4KdC30SZA/8V-TXqxeNUmWfMNywXjxIg" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='WI-Update' title='ACME System 1' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                             <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                 <uix:Target CVScreenId="548ae7f0-5089-4f26-9ec5-2115a641c484" CvTextArea="427, 378, 110, 14" CvTextArgument="Add Comments:" CvType="Text" DesignTimeRectangle="429, 375, 108, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Add Comments:' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Add Comments:' /&gt;" Guid="42e1a4c5-5032-4531-bf71-6b23ee45ceec" SearchSteps="FuzzySelector, CV" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
@@ -281,7 +328,7 @@
                         <uix:NSelectItem.Target>
                           <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/109473840" CVScreenId="548ae7f0-5089-4f26-9ec5-2115a641c484" ContentHash="6lhc9MdlLEKdMRGLCGZ3Mw" CvElementArea="427, 493, 223, 36" CvType="InputBox" DesignTimeRectangle="429, 494, 220, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='btn dropdown-toggle bs-placeholder btn-default' aaname='---' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='---' /&gt;" Guid="d77aa4f8-2d7b-49fd-a922-c75d92b1b995" InformativeScreenshot="db4597d116eb1b44b7ee83ed320f0f98.jpg" Reference="MY9TZGD9OUCZH4KdC30SZA/c37hct-9Z0KbnHRqy-zixw" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='WI-Update' title='ACME System 1' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                             <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                 <uix:Target CVScreenId="548ae7f0-5089-4f26-9ec5-2115a641c484" CvTextArea="427, 471, 83, 15" CvTextArgument="New Status:" CvType="Text" DesignTimeRectangle="429, 469, 80, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='New Status:' tag='LABEL' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='New Status:' /&gt;" Guid="9cd7c454-6fb9-42ca-98dc-9e5605159dd5" SearchSteps="FuzzySelector, CV" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
@@ -305,7 +352,7 @@
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/update/109473840" CVScreenId="64f070e8-2ca2-4562-b665-63241d4803f8" ContentHash="QosiCifAWES8MLkeIp6wHw" CvElementArea="1104, 177, 70, 43" CvTextArea="1129, 192, 21, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="1108, 179, 64, 38" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='acme-test.uipath.com diz' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" Guid="e45608a2-ac80-402f-b218-7b596a5e8e24" InformativeScreenshot="c1b9e4e61f3eb522d42163aff42b41f3.jpg" Reference="MY9TZGD9OUCZH4KdC30SZA/mLE-Lgof2EGvz-3odNOu7w" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                       <uix:Target CVScreenId="64f070e8-2ca2-4562-b665-63241d4803f8" CvTextArea="762, 146, 210, 17" CvTextArgument="Work Item was updated accordingly" CvType="Text" DesignTimeRectangle="764, 143, 408, 20" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='acme-test.uipath.com diz' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Work Item was updated accordingly' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Work Item was updated accordingly' /&gt;" Guid="f7ae81e1-8e73-4c48-93d2-fbe2b13f63ea" SearchSteps="FuzzySelector, CV" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
@@ -326,15 +373,14 @@
                         <uix:NCheckState.Target>
                           <uix:TargetAnchorable BrowserURL="acme-test.uipath.com/work-items/update/109473840" CVScreenId="b5517469-e5f2-4284-a7bd-5ef7fa176d59" ContentHash="Tw8hfqwymUKunj5uzOLfqA" CvTextArea="762, 146, 210, 17" CvTextArgument="Work Item was updated accordingly" CvType="Text" DesignTimeRectangle="764, 143, 408, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='acme-test.uipath.com diz' role='dialog' /&gt;&lt;ctrl name='Work Item was updated accordingly' role='text' /&gt;" Guid="f56ec2b6-6c9f-4e13-ba6f-d88f78a41efe" InformativeScreenshot="592e8d13af8ca9670b2cf7aa56462327.jpg" Reference="MY9TZGD9OUCZH4KdC30SZA/pdBEXvDtTEmKQ7bYtQ8wFA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='ACME System 1 - Google Chrome' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                             <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                 <uix:Target CVScreenId="b5517469-e5f2-4284-a7bd-5ef7fa176d59" CvTextArea="761, 114, 188, 19" CvTextArgument="acme-test.uipath.com diz" CvType="Text" DesignTimeRectangle="761, 114, 188, 20" ElementType="Text" Guid="8ce0ad16-077e-4d45-a73b-f3230552d50c" SearchSteps="CV" TargetType="ComputerVisionBased" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
                         </uix:NCheckState.Target>
                       </uix:NCheckState>
-                      <uix:NGoToUrl DisplayName="Go To URL - uipath.com" sap:VirtualizedContainerService.HintSize="452,123" sap2010:WorkflowViewState.IdRef="NGoToUrl_5" ScopeIdentifier="632b1afe-a851-4be5-bd0c-82ffdf9cb280" Url="https://acme-test.uipath.com/work-items/" Version="V5" />
-                      <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="452,114" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                      <uix:NGoToUrl DisplayName="Go To URL - uipath.com" sap:VirtualizedContainerService.HintSize="452,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_5" ScopeIdentifier="632b1afe-a851-4be5-bd0c-82ffdf9cb280" Url="https://acme-test.uipath.com/work-items/" Version="V5" />
                     </Sequence>
                   </Sequence>
                 </ActivityAction>
@@ -351,6 +397,9 @@
                   <uix:TargetApp.Arguments>
                     <InArgument x:TypeArguments="x:String" />
                   </uix:TargetApp.Arguments>
+                  <uix:TargetApp.Url>
+                    <InArgument x:TypeArguments="x:String" />
+                  </uix:TargetApp.Url>
                   <uix:TargetApp.WorkingDirectory>
                     <InArgument x:TypeArguments="x:String" />
                   </uix:TargetApp.WorkingDirectory>
