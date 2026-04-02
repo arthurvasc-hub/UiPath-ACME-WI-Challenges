@@ -1,0 +1,14 @@
+﻿# Pasta de execução e estados locais
+.local/
+.objects/
+.settings/
+.tmh/
+.storage/
+.runtime/
+
+# Screenshots de erros
+Exceptions_Screenshots/
+
+# Pacotes gerados e logs
+*.nupkg
+*.log
