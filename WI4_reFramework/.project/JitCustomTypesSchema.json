@@ -1,0 +1,115 @@
+{
+  "exportedBy": null,
+  "bundleHash": null,
+  "version": "1.0.0.0",
+  "jitAssemblyCompilerCommands": [
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 1,
+        "idRef": "NExtractDataGeneric`1_2",
+        "hash": "NExtractDataGeneric`1_2|DataTable|7kdRZuLfdn4IKWe9vC7BXlrJV7UPeBKoYvTH1fo",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "WIID",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Description",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Type",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Status",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable1",
+        "hash": "NExtractDataGeneric`1_2|DataTable|VdSZCR2rJl0txDZfIy3NjspkNxZp0kA2yRs9BVgkntk",
+        "assemblyName": "Studio.Generated.TypedDataTable1"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 2,
+        "idRef": "NExtractDataGeneric`1_2",
+        "hash": "NExtractDataGeneric`1_2|DataTable|7kdRZuLfdn4IKWe9vC7BXlrJV7UPeBKoYvTH1fo",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "WIID",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Description",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Type",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Status",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable2",
+        "hash": "NExtractDataGeneric`1_2|DataTable|VdSZCR2rJl0txDZfIy3NjspkNxZp0kA2yRs9BVgkntk",
+        "assemblyName": "Studio.Generated.TypedDataTable2"
+      }
+    },
+    {
+      "providerName": "TypedDataTable",
+      "typedDataTableDto": {
+        "id": 3,
+        "idRef": "NExtractDataGeneric`1_3",
+        "hash": "NExtractDataGeneric`1_3|DataTable|7kdRZuLfdn4IKWe9vC7BXlrJV7UPeBKoYvTH1fo",
+        "dataType": "System.Data.DataTable, System.Data.Common",
+        "columns": [
+          {
+            "columnName": "WIID",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Description",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Type",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Status",
+            "dataType": "System.String, System.Private.CoreLib"
+          },
+          {
+            "columnName": "Date",
+            "dataType": "System.String, System.Private.CoreLib"
+          }
+        ]
+      },
+      "entityAssemblyKey": {
+        "name": "Studio.Generated.TypedDataTable3",
+        "hash": "NExtractDataGeneric`1_3|DataTable|VdSZCR2rJl0txDZfIy3NjspkNxZp0kA2yRs9BVgkntk",
+        "assemblyName": "Studio.Generated.TypedDataTable3"
+      }
+    }
+  ]
+}

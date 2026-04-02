@@ -1,0 +1,6 @@
+{
+  "Name": "WI4_reFramework",
+  "ProjectType": "Process",
+  "Description": "Processo WI4 - ACME",
+  "MainFile": "Main.xaml"
+}
