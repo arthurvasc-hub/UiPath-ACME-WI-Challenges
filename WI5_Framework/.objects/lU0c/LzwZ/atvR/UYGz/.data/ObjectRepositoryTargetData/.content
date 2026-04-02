@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6rpoATwNb0S7Swic65tzbg" Reference="MY9TZGD9OUCZH4KdC30SZA/UYGzKrcjJ0GArfkWK1t3NA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="sha1-online.com" CVScreenId="b62ae19c-d130-4229-8963-7c76c97139fd" CvType="AnyWordGroup" DesignTimeRectangle="818, 441, 469, 22" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='result-sha1' tag='SPAN' /&gt;" Guid="560ad193-1077-4e5d-b4d5-2d149d0dd409" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHA1 online' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b62ae19c-d130-4229-8963-7c76c97139fd" CvElementArea="922, 404, 91, 21" CvType="InputBox" DesignTimeRectangle="924, 405, 88, 19" ElementType="DropDown" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" Guid="507dfe7a-3280-4267-99e9-af2ea182e965" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e34ae38258d8eccc6408a76b07fe9305.jpg" xmlns="">0cE2LvDhl3keFZTFtc7CP3g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
